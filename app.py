@@ -4,7 +4,16 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Hello Mohit! Wellcome to Flask"
+    return "Hello Mohit! Wellcome to Flask For Home Page"
+
+@app.route("/about")
+def about():
+    return "Welcome to About Page"
+
+@app.route("/contact")
+def contact():
+    return "Welcome to Contact Page"
+
 
 if __name__ == "__main__":
     app.run(debug=True)
